@@ -1,0 +1,26 @@
+{
+  "name": "konstructor",
+  "version": "1.0.0",
+  "description": "more than a boilerplate, less than a framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konstructorjs/konstructor.git"
+  },
+  "keywords": [
+    "konstructor",
+    "node",
+    "nodejs",
+    "koa",
+    "http"
+  ],
+  "author": "Manthan Mallikarjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konstructorjs/konstructor/issues"
+  },
+  "homepage": "https://github.com/konstructorjs/konstructor#readme"
+}
