@@ -1,6 +1,6 @@
 {
   "name": "konstructor",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "more than a boilerplate, less than a framework.",
   "main": "lib",
   "scripts": {
