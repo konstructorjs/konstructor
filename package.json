@@ -2,11 +2,19 @@
   "name": "konstructor",
   "version": "1.0.0",
   "description": "more than a boilerplate, less than a framework.",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
+    "dev": "babel --out-dir lib/ --copy-files --watch src/",
+    "prepublish": "npm run compile",
+    "compile": "babel --out-dir lib/ --copy-files src/",
     "test": "npm run lint",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js src/*"
   },
+  "files": [
+    "lib",
+    "app.js",
+    "config.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/konstructorjs/konstructor.git"
@@ -25,8 +33,35 @@
   },
   "homepage": "https://github.com/konstructorjs/konstructor#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "eslint": "^4.3.0",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.7.0"
+  },
+  "bin": {
+    "konstructor": "src/index.js"
+  },
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": ">=4.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "chokidar": "^1.7.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-conditional-get": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "koa-logger": "^3.0.1",
+    "koa-response-time": "^2.0.0",
+    "koa-router": "^7.2.1",
+    "koa-session": "^5.5.0",
+    "koa-static": "^4.0.1",
+    "livereload": "^0.6.2",
+    "marko": "^4.4.22",
+    "require-directory": "^2.1.1",
+    "zlib": "^1.0.5"
   }
 }
