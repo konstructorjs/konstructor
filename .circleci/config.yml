@@ -35,3 +35,10 @@ jobs:
 
       # run tests!
       - run: npm test
+
+      - deploy:
+          name: Semantic Release
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npm run semantic-release || true
+            fi

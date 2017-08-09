@@ -1,6 +1,6 @@
 {
   "name": "konstructor",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "more than a boilerplate, less than a framework.",
   "main": "lib",
   "scripts": {
@@ -8,7 +8,8 @@
     "prepublish": "npm run compile",
     "compile": "babel --out-dir lib/ --copy-files src/",
     "test": "npm run lint",
-    "lint": "eslint *.js src/*"
+    "lint": "eslint *.js src/*",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
     "lib",
@@ -17,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/konstructorjs/konstructor.git"
+    "url": "https://github.com/konstructorjs/konstructor.git"
   },
   "keywords": [
     "konstructor",
@@ -35,9 +36,11 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.6.0",
+    "condition-circle": "^1.5.0",
     "eslint": "^4.3.0",
     "eslint-config-airbnb-base": "^11.3.1",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "semantic-release": "^6.3.6"
   },
   "bin": {
     "konstructor": "src/index.js"
@@ -63,5 +66,8 @@
     "marko": "^4.4.22",
     "require-directory": "^2.1.1",
     "zlib": "^1.0.5"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   }
 }
