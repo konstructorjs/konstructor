@@ -14,7 +14,8 @@ const chalk = require('chalk');
 const router = KoaRouter();
 const currentDirectory = process.cwd();
 
-const endpoints = requireDirectory(module, path.join(currentDirectory, './app'));
+const endpointBlacklist = name => name.includes('app/models/');
+const endpoints = requireDirectory(module, path.join(currentDirectory, './app'), { exclude: endpointBlacklist });
 
 module.exports = (app) => {
   let routes;
