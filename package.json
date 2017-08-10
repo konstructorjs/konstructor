@@ -12,9 +12,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
-    "lib",
-    "app.js",
-    "config.js"
+    "lib"
   ],
   "repository": {
     "type": "git",
@@ -43,7 +41,7 @@
     "semantic-release": "^6.3.6"
   },
   "bin": {
-    "konstructor": "src/index.js"
+    "konstructor": "lib/index.js"
   },
   "engines": {
     "node": ">=7.6.0",
