@@ -4,6 +4,7 @@ const chalk = require('chalk');
 
 const endpoint = require('./endpoint');
 const router = require('./router');
+const model = require('./model');
 
 const script = process.argv[2];
 
@@ -22,5 +23,6 @@ if (script) {
   module.exports = {
     endpoint,
     router,
+    model,
   };
 }

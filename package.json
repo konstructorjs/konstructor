@@ -52,6 +52,7 @@
   "dependencies": {
     "chalk": "^2.0.1",
     "chokidar": "^1.7.0",
+    "knex": "^0.13.0",
     "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
     "koa-compress": "^2.0.0",
@@ -64,6 +65,8 @@
     "koa-static": "^4.0.1",
     "livereload": "^0.6.2",
     "marko": "^4.4.22",
+    "objection": "^0.8.6",
+    "pg": "^7.1.0",
     "require-directory": "^2.1.1",
     "zlib": "^1.0.5"
   },
