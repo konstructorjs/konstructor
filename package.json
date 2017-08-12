@@ -42,7 +42,7 @@
     "semantic-release": "^6.3.6"
   },
   "bin": {
-    "konstructor": "src/index.js"
+    "konstructor": "lib/index.js"
   },
   "engines": {
     "node": ">=7.6.0",
