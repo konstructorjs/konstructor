@@ -13,8 +13,7 @@
   },
   "files": [
     "lib",
-    "app.js",
-    "config.js"
+    "app.js"
   ],
   "repository": {
     "type": "git",
