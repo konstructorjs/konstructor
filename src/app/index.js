@@ -28,5 +28,6 @@ if (config.liveReload) {
   });
   liveReloadServer.watch([
     path.join(currentDirectory, './public'),
+    path.join(currentDirectory, './app'),
   ]);
 }
