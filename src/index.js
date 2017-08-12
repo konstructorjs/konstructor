@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const endpoint = require('./endpoint');
 const router = require('./router');
 const model = require('./model');
+const config = require('./config');
 
 const script = process.argv[2];
 
@@ -24,5 +25,6 @@ if (script) {
     endpoint,
     router,
     model,
+    config,
   };
 }
