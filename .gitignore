@@ -1,9 +1,6 @@
 # Babel output
 lib
 
-# Docs
-docs/_site
-
 # Logs
 logs
 *.log
