@@ -66,8 +66,7 @@
     "marko": "^4.4.22",
     "objection": "^0.8.6",
     "pg": "^7.1.0",
-    "require-directory": "^2.1.1",
-    "zlib": "^1.0.5"
+    "require-directory": "^2.1.1"
   },
   "release": {
     "verifyConditions": "condition-circle"
