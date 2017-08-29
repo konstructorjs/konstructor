@@ -14,6 +14,7 @@ if (script) {
     case 'start':
     case 'dev':
     case 'build':
+    case 'digest':
       require(path.join(__dirname, './scripts', script))();
       break;
     default:
