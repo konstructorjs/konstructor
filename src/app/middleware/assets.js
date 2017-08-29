@@ -3,7 +3,6 @@ const path = require('path');
 
 const currentDirectory = process.cwd();
 module.exports = (app) => {
-
   // load the assets into the state
   app.use(async (ctx, next) => {
     ctx.state.assets = {
