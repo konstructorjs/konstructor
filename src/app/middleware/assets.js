@@ -16,7 +16,7 @@ module.exports = (app) => {
 
         jsAssets = jsAssets || [];
 
-        jsAssets.filter(asset => asset.startsWith('app'));
+        jsAssets.filter(asset => path.extname(asset) === '.js');
         return jsAssets;
       },
       css() {
@@ -29,7 +29,7 @@ module.exports = (app) => {
 
         cssAssets = cssAssets || [];
 
-        cssAssets.filter(asset => asset.startsWith('app'));
+        cssAssets.filter(asset => path.extname(asset) === '.css');
         return cssAssets;
       },
     };
