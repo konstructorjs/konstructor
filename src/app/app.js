@@ -33,6 +33,8 @@ register('reload', './middleware/reload.js');
 
 register('static', './middleware/static.js');
 
+register('assets', './middleware/assets.js');
+
 register('session', './middleware/session.js');
 
 register('body-parser', './middleware/body-parser.js');
