@@ -1,4 +1,4 @@
-## Installation
+# Installation
 The easiest way to get started with konstructor is to use konstructor-cli. Install konstructor-cli through npm, and use it to create the application.
 ```
 npm install -g konstructor-cli
