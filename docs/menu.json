@@ -5,7 +5,7 @@
       "children": [
         {
           "name": "Getting Started",
-          "path": "/getting-started/index.md",
+          "path": "/getting-started/index.md"
         },
         {
           "name": "Installation",
