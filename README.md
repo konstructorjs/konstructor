@@ -9,12 +9,18 @@
 # konstructor - more than a boilerplate, less than a framework
 konstructor is a simple and intuitive node.js framework to help you build out large production applications. konstructor's goal is to give you what you know and love about node and koa, without all of the set up involved so you can get started really quickly.
 
-## Installation
+## Getting Started
+
+### Requirements
+- `node >= 7.6.0`
+- `npm >= 4`
+
+### Installation
 The easiest way to get started is with [konstructor-cli](https://github.com/konstructorjs/konstructor-cli).
 ```
 npm install -g konstructor-cli
 ```
 See the [installation guide](https://konstructor.js.org/docs/getting-started/installation) for more information.
 
-## Documentation
+## Documentation/Guides
 You can find all of the documentation on [konstructor's website](https://konstructor.js.org/docs) or in the `docs` folder.
