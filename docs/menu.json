@@ -1,15 +1,17 @@
-[
-  {
-    "name": "Getting Started",
-    "children": [
-      {
-        "name": "Getting Started",
-        "path": "/getting-started/index.md",
-      },
-      {
-        "name": "Installation",
-        "path": "/getting-started/installation.md"
-      }
-    ]
-  }
-]
+{
+  "menu": [
+    {
+      "name": "Getting Started",
+      "children": [
+        {
+          "name": "Getting Started",
+          "path": "/getting-started/index.md",
+        },
+        {
+          "name": "Installation",
+          "path": "/getting-started/installation.md"
+        }
+      ]
+    }
+  ]
+}
