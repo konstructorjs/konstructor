@@ -9,3 +9,5 @@ npm run dev
 ```
 
 The generated project comes with everything you need to get started. The main codebase for the application is under the `app` directory, while the assets are under the `assets` directory. The `app` folder is processed and run by konstructor, and the `assets` directory is compiled through laravel-mix which is a library that provied a simple wrapper over webpack.
+
+Running `npm run dev` will start the development server. You can access your newly generated project at [http://localhost:3000](http://localhost:3000)
