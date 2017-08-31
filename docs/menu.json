@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Getting Started",
+    "path": "/getting-started/index.md",
+    "children": [
+      {
+        "name": "Installation",
+        "path": "/getting-started/installation.md"
+      }
+    ]
+  }
+]
