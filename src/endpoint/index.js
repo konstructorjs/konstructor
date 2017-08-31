@@ -16,11 +16,15 @@ module.exports = class endpoint {
   }
 
   async render(...input) {
-    const options = {};
-    options.template = path.join(currentDirectory, './app', this.path, './index.marko');
-    if (input.length === 2) {
-      options.template = path.join(currentDirectory, './app', this.path, input[1]);
+    try {
+      const options = {};
+      options.template = path.join(currentDirectory, './app', this.path, './index.marko');
+      if (input.length === 2) {
+        options.template = path.join(currentDirectory, './app', this.path, input[1]);
+      }
+      return this.ctx.render(options.template, input[0]);
+    } catch (err) {
+      throw new Error(`error rendering template\n${err.stack}`);
     }
-    return this.ctx.render(options.template, input[0]);
   }
 };

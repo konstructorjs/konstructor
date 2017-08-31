@@ -15,6 +15,8 @@ if (!config.keys) {
   app.keys = config.keys;
 }
 
+register('errorHandler', './middleware/error-handler.js');
+
 register('response-time', './middleware/response-time.js');
 
 register('logger', './middleware/logger.js');
