@@ -17,4 +17,4 @@ npm install -g konstructor-cli
 See the [installation guide](https://konstructor.js.org/docs/getting-started/installation) for more information.
 
 ## Documentation
-You can find all of the documentation on [konstructors website](https://konstructor.js.org/docs) or in the `docs` folder.
+You can find all of the documentation on [konstructor's website](https://konstructor.js.org/docs) or in the `docs` folder.
