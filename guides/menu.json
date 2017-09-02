@@ -165,16 +165,16 @@
             }
           ]
         }
-      ],
-      "konstructor-essentials": [
+      ]
+    }
+  ],
+  "konstructor-essentials": [
+    {
+      "name": "Getting Started",
+      "children": [
         {
           "name": "Getting Started",
-          "children": [
-            {
-              "name": "Getting Started",
-              "path": "getting-started/index"
-            }
-          ]
+          "path": "getting-started/index"
         }
       ]
     }
