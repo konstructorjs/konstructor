@@ -42,7 +42,41 @@
         },
         {
           "name": "Build",
-          "path": "kolony/build"
+          "path": "kolony/build",
+          "children": [
+            {
+              "name": "Initialize",
+              "path": "#intialize"
+            },
+            {
+              "name": "Node",
+              "path": "#node"
+            },
+            {
+              "name": "Environment",
+              "path": "#environment"
+            },
+            {
+              "name": "Install",
+              "path": "#clean"
+            },
+            {
+              "name": "Build",
+              "path": "#build"
+            },
+            {
+              "name": "Digest",
+              "path": "#digest"
+            },
+            {
+              "name": "Start",
+              "path": "#start"
+            },
+            {
+              "name": "Cleanup",
+              "path": "#cleanup"
+            },
+          ]
         }
       ]
     }
