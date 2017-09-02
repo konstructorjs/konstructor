@@ -113,8 +113,8 @@
       "name": "Builds",
       "children": [
         {
-          "name": "Build",
-          "path": "commands/build",
+          "name": "Stages",
+          "path": "builds/stages",
           "children": [
             {
               "name": "Initialize",
