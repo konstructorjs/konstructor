@@ -1,146 +1,150 @@
 {
-  "konstructor": {
-    "name": "Getting Started",
-    "children": [
-      {
-        "name": "Getting Started",
-        "path": "getting-started/index"
-      },
-      {
-        "name": "Installation",
-        "path": "getting-started/installation"
-      },
-      {
-        "name": "Organization",
-        "path": "getting-started/organization",
-        "children": [
-          {
-            "name": "App",
-            "path": "#app"
-          },
-          {
-            "name": "Assets",
-            "path": "#assets"
-          },
-          {
-            "name": "Config",
-            "path": "#config"
-          },
-          {
-            "name": "DB",
-            "path": "#db"
-          }
-        ]
-      }
-    ]
-  },
-  "kolony": {
-    "name": "Kolony",
-    "children": [
-      {
-        "name": "Quick Start",
-        "path": "kolony/index"
-      },
-      {
-        "name": "Installation",
-        "path": "kolony/installation"
-      },
-      {
-        "name": "Apps",
-        "path": "kolony/apps",
-        "children": [
-          {
-            "name": "List",
-            "path": "#list"
-          },
-          {
-            "name": "Create",
-            "path": "#create"
-          },
-          {
-            "name": "Destroy",
-            "path": "#destroy"
-          }
-        ]
-      },
-      {
-        "name": "Config",
-        "path": "kolony/config",
-        "children": [
-          {
-            "name": "Get",
-            "path": "#get"
-          },
-          {
-            "name": "Set",
-            "path": "#set"
-          },
-          {
-            "name": "Unset",
-            "path": "#unset"
-          }
-        ]
-      },
-      {
-        "name": "Domains",
-        "path": "kolony/domains",
-        "children": [
-          {
-            "name": "List",
-            "path": "#list"
-          },
-          {
-            "name": "Add",
-            "path": "#add"
-          },
-          {
-            "name": "Remove",
-            "path": "#remove"
-          }
-        ]
-      },
-      {
-        "name": "Build",
-        "path": "kolony/build",
-        "children": [
-          {
-            "name": "Initialize",
-            "path": "#initialize"
-          },
-          {
-            "name": "Node",
-            "path": "#node"
-          },
-          {
-            "name": "Environment",
-            "path": "#environment"
-          },
-          {
-            "name": "Install",
-            "path": "#install"
-          },
-          {
-            "name": "Clean",
-            "path": "#clean"
-          },
-          {
-            "name": "Build",
-            "path": "#build"
-          },
-          {
-            "name": "Digest",
-            "path": "#digest"
-          },
-          {
-            "name": "Start",
-            "path": "#start"
-          },
-          {
-            "name": "Cleanup",
-            "path": "#cleanup"
-          }
-        ]
-      }
-    ]
-  }
+  "konstructor": [
+    {
+      "name": "Getting Started",
+      "children": [
+        {
+          "name": "Getting Started",
+          "path": "getting-started/index"
+        },
+        {
+          "name": "Installation",
+          "path": "getting-started/installation"
+        },
+        {
+          "name": "Organization",
+          "path": "getting-started/organization",
+          "children": [
+            {
+              "name": "App",
+              "path": "#app"
+            },
+            {
+              "name": "Assets",
+              "path": "#assets"
+            },
+            {
+              "name": "Config",
+              "path": "#config"
+            },
+            {
+              "name": "DB",
+              "path": "#db"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kolony": [
+    {
+      "name": "Kolony",
+      "children": [
+        {
+          "name": "Quick Start",
+          "path": "kolony/index"
+        },
+        {
+          "name": "Installation",
+          "path": "kolony/installation"
+        },
+        {
+          "name": "Apps",
+          "path": "kolony/apps",
+          "children": [
+            {
+              "name": "List",
+              "path": "#list"
+            },
+            {
+              "name": "Create",
+              "path": "#create"
+            },
+            {
+              "name": "Destroy",
+              "path": "#destroy"
+            }
+          ]
+        },
+        {
+          "name": "Config",
+          "path": "kolony/config",
+          "children": [
+            {
+              "name": "Get",
+              "path": "#get"
+            },
+            {
+              "name": "Set",
+              "path": "#set"
+            },
+            {
+              "name": "Unset",
+              "path": "#unset"
+            }
+          ]
+        },
+        {
+          "name": "Domains",
+          "path": "kolony/domains",
+          "children": [
+            {
+              "name": "List",
+              "path": "#list"
+            },
+            {
+              "name": "Add",
+              "path": "#add"
+            },
+            {
+              "name": "Remove",
+              "path": "#remove"
+            }
+          ]
+        },
+        {
+          "name": "Build",
+          "path": "kolony/build",
+          "children": [
+            {
+              "name": "Initialize",
+              "path": "#initialize"
+            },
+            {
+              "name": "Node",
+              "path": "#node"
+            },
+            {
+              "name": "Environment",
+              "path": "#environment"
+            },
+            {
+              "name": "Install",
+              "path": "#install"
+            },
+            {
+              "name": "Clean",
+              "path": "#clean"
+            },
+            {
+              "name": "Build",
+              "path": "#build"
+            },
+            {
+              "name": "Digest",
+              "path": "#digest"
+            },
+            {
+              "name": "Start",
+              "path": "#start"
+            },
+            {
+              "name": "Cleanup",
+              "path": "#cleanup"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
