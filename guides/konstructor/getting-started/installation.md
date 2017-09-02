@@ -1,6 +1,6 @@
 # Installation
 
-## Requirements
+# Requirements
 - `node >= 7.6.0`
 - `npm >= 4`
 
