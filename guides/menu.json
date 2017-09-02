@@ -46,7 +46,7 @@
           "children": [
             {
               "name": "Initialize",
-              "path": "#intialize"
+              "path": "#initialize"
             },
             {
               "name": "Node",
@@ -58,6 +58,10 @@
             },
             {
               "name": "Install",
+              "path": "#install"
+            },
+            {
+              "name": "Clean",
               "path": "#clean"
             },
             {
