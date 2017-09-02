@@ -106,7 +106,12 @@
               "path": "#remove"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Builds",
+      "children": [
         {
           "name": "Build",
           "path": "commands/build",
@@ -148,15 +153,6 @@
               "path": "#cleanup"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Builds",
-      "children": [
-        {
-          "name": "Stages",
-          "path": "builds/stages"
         }
       ]
     }
