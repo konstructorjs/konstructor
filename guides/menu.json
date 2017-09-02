@@ -30,15 +30,57 @@
         },
         {
           "name": "Apps",
-          "path": "kolony/apps"
+          "path": "kolony/apps",
+          "children": [
+            {
+              "name": "List",
+              "path": "#list"
+            },
+            {
+              "name": "Create",
+              "path": "#create"
+            },
+            {
+              "name": "Destroy",
+              "path": "#destroy"
+            }
+          ]
         },
         {
           "name": "Config",
-          "path": "kolony/config"
+          "path": "kolony/config",
+          "children": [
+            {
+              "name": "Get",
+              "path": "#get"
+            },
+            {
+              "name": "Set",
+              "path": "#set"
+            },
+            {
+              "name": "Unset",
+              "path": "#unset"
+            }
+          ]
         },
         {
           "name": "Domains",
-          "path": "kolony/domains"
+          "path": "kolony/domains",
+          "children": [
+            {
+              "name": "List",
+              "path": "#list"
+            },
+            {
+              "name": "Add",
+              "path": "#add"
+            },
+            {
+              "name": "Remove",
+              "path": "#remove"
+            }
+          ]
         },
         {
           "name": "Build",
