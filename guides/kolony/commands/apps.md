@@ -1,5 +1,5 @@
 # Apps
-## List
+# List
 You can list all applications in kolony through `app:list`.
 ```
 $ kolony apps:list
@@ -13,7 +13,7 @@ cygpT  konstructor  9637  production   konstructor.ludicrous.xyz
 
 ```
 This will list all of your applications, and if they are deployed, the id, port, environment, and domains.
-## Create
+# Create
 You can create a new application in kolony by running the `apps:create` command. It must contain only lowercase letters and hyphens.
 ```
 $ kolony apps:create my-app
@@ -31,7 +31,7 @@ $ kolony apps:create my-app
 
 ```
 This will set up a new git repository you can push to, and a pm2 config.
-## Destroy
+# Destroy
 If you would like to get rid of and existing application, you can use `apps:destroy`.
 ```
 $ kolony apps:destroy my-app

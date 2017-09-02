@@ -1,5 +1,5 @@
 # Domains
-## List
+# List
 To list the domains you have attached to a kolony app, use `domains:list`.
 ```
 $ kolony domains:list my-app
@@ -9,7 +9,7 @@ domains
 my-app.com
 
 ```
-## Add
+# Add
 You can add domains to kolony applications which will set up nginx to proxy requests to your apps.
 ```
 $ kolony domains:add my-app my-app.com
@@ -33,7 +33,7 @@ $ kolony domains:add my-app my-app.com
 
 ```
 After adding a new domain, it is up to you to update your domain's DNS to point to the server.
-## Remove
+# Remove
 If you accidentally added the wrong domain or simply would like to remove a domain, use `domains:remove`.
 ```
 $ kolony domains:remove my-app my-app.com

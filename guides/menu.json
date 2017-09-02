@@ -38,19 +38,24 @@
   ],
   "kolony": [
     {
-      "name": "Kolony",
+      "name": "Getting Started",
       "children": [
         {
-          "name": "Quick Start",
-          "path": "kolony/index"
+          "name": "Getting Started",
+          "path": "getting-started/index"
         },
         {
           "name": "Installation",
-          "path": "kolony/installation"
-        },
+          "path": "getting-started/installation"
+        }
+      ]
+    },
+    {
+      "name": "Commands",
+      "children": [
         {
           "name": "Apps",
-          "path": "kolony/apps",
+          "path": "commands/apps",
           "children": [
             {
               "name": "List",
@@ -68,7 +73,7 @@
         },
         {
           "name": "Config",
-          "path": "kolony/config",
+          "path": "commands/config",
           "children": [
             {
               "name": "Get",
@@ -86,7 +91,7 @@
         },
         {
           "name": "Domains",
-          "path": "kolony/domains",
+          "path": "commands/domains",
           "children": [
             {
               "name": "List",
@@ -104,7 +109,7 @@
         },
         {
           "name": "Build",
-          "path": "kolony/build",
+          "path": "commands/build",
           "children": [
             {
               "name": "Initialize",

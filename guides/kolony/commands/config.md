@@ -1,5 +1,5 @@
 # Config
-## Get
+# Get
 You can list out the environment variables for an app throught `config:get`.
 ```
 $ kolony config:get my-app
@@ -13,7 +13,7 @@ NPM_CONFIG_PRODUCTION  false
 NODE_VERBOSE           false
 
 ```
-## Set
+# Set
 If you want to add an environment variable, you can do it through `config:set`.
 ```
 $ kolony config:set my-app SECRET_KEY_BASE="1234567890" API_KEY="1234567890"
@@ -34,7 +34,7 @@ $ kolony config:set my-app SECRET_KEY_BASE="1234567890" API_KEY="1234567890"
 
 ```
 This will add the environment variables and if the application is already deployed, the process will be restarted with the new environment variables.
-## Unset
+# Unset
 If you want to remove any environment variables, you can do so by using `config:unset` followed by the keys you would like to remove.
 ```
 $ kolony config:unset my-app SECRET_KEY_BASE API_KEY

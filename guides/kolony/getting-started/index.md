@@ -1,9 +1,9 @@
-# Quick Start
+# Getting Started
 
-## Introduction
+# Introduction
 kolony is a new self hosted deployment tool for Node.js apps. It is similar to software like [Dokku](https://github.com/dokku/dokku) or [Flynn](https://flynn.io/), however it is based off of [PM2](http://pm2.keymetrics.io/) instead of [Docker](https://www.docker.com/) which means it can run on cheap OpenVZ servers like [VPSDime](https://vpsdime.com/aff.php?aff=1576) (affiliate link), as well as more expensive KVM servers like [DigitalOcean](https://m.do.co/c/4bfd9876d75a) (affiliate link). It will work out of the box for [konstructor](https://github.com/konstructorjs/konstructor) applications, but can also be configured to work with any Node.js app.
 
-### Requirements
+## Requirements
 - [git](https://git-scm.com/)
 - [nginx](https://www.nginx.com/resources/wiki/)
 - [nvm](https://github.com/creationix/nvm)

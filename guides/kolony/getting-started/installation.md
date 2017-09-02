@@ -1,6 +1,6 @@
 # Installation
 
-## Requirements
+# Requirements
 - [git](https://git-scm.com/)
 - [nginx](https://www.nginx.com/resources/wiki/)
 - [nvm](https://github.com/creationix/nvm)
