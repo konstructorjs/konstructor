@@ -16,6 +16,35 @@
           "path": "getting-started/organization"
         }
       ]
+    },
+    {
+      "name": "Kolony",
+      "children": [
+        {
+          "name": "Kolony",
+          "path": "kolony/index"
+        },
+        {
+          "name": "Installation",
+          "path": "kolony/installation"
+        },
+        {
+          "name": "Apps",
+          "path": "kolony/apps"
+        },
+        {
+          "name": "Config",
+          "path": "kolony/config"
+        },
+        {
+          "name": "Domains",
+          "path": "kolony/domains"
+        },
+        {
+          "name": "Build",
+          "path": "kolony/build"
+        }
+      ]
     }
   ]
 }
