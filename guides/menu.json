@@ -150,6 +150,15 @@
           ]
         }
       ]
-    }
+    },
+    {
+      "name": "Builds",
+      "children": [
+        {
+          "name": "Stages",
+          "path": "builds/stages"
+        }
+      ]
+    },
   ]
 }
