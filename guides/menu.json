@@ -21,7 +21,7 @@
       "name": "Kolony",
       "children": [
         {
-          "name": "Kolony",
+          "name": "Quick Start",
           "path": "kolony/index"
         },
         {
