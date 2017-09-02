@@ -24,10 +24,10 @@ if (config.liveReload) {
   const path = require('path');
   const currentDirectory = process.cwd();
   const liveReloadServer = liveReload.createServer({
-    exts: ['html', 'css', 'js', 'png', 'gif', 'jpg', 'php', 'php5', 'py', 'rb', 'erb', 'coffee', 'marko'],
+    exts: ['marko'],
   });
   liveReloadServer.watch([
     path.join(currentDirectory, './public'),
-    path.join(currentDirectory, './app'),
+    path.join(currentDirectory, './app/**/*.marko'),
   ]);
 }
