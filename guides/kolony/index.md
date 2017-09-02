@@ -1,8 +1,7 @@
 # Quick Start
 
 ## Introduction
-kolony is a new self-hosted deployment tool for Node.js apps. It is similar to software like [Dokku](https://github.com/dokku/dokku) or [Flynn](https://flynn.io/), however it is based off of pm2 instead of docker which means it can run on cheap OpenVZ servers like [VPSDime](https://vpsdime.com/aff.php?aff=1576) (affiliate link), as well as more expensive KVM servers like [DigitalOcean](https://m.do.co/c/4bfd9876d75a) (affiliate link). It will work out of the box for [konstructor](https://github.com/konstructorjs/konstructor) applications, but can also be configured to work with any Node.js app.
-
+kolony is a new self hosted deployment tool for Node.js apps. It is similar to software like [Dokku](https://github.com/dokku/dokku) or [Flynn](https://flynn.io/), however it is based off of [PM2](http://pm2.keymetrics.io/) instead of [Docker](https://www.docker.com/) which means it can run on cheap OpenVZ servers like [VPSDime](https://vpsdime.com/aff.php?aff=1576) (affiliate link), as well as more expensive KVM servers like [DigitalOcean](https://m.do.co/c/4bfd9876d75a) (affiliate link). It will work out of the box for [konstructor](https://github.com/konstructorjs/konstructor) applications, but can also be configured to work with any Node.js app.
 
 ### Requirements
 - [git](https://git-scm.com/)
@@ -17,7 +16,7 @@ Install kolony through npm.
 npm install -g kolony
 ```
 
-Then set up kolony. If there are any problems, make sure you fix them before continuing.
+Then run the setup. If there are any problems, make sure you fix them before continuing.
 ```
 $ kolony setup
 
@@ -50,7 +49,7 @@ $ kolony setup
 
 ```
 
-Then create a new app in kolony.
+Then create a new app in kolony with your desired name. It must contain only lowercase letters and hyphens.
 ```
 $ kolony apps:create my-app
 
@@ -67,7 +66,7 @@ $ kolony apps:create my-app
 
 ```
 
-For this guide, we are going to deploy a [konstructor](https://github.com/konstructorjs/konstructor) application so no configuration is needed. If you are deploying a non-konstructor application, look at the [build](https://konstructor.js.org/guides/kolony/build) guide for more information on how to properly configure your deployment stages.
+For this guide, we are going to deploy a [konstructor](https://github.com/konstructorjs/konstructor) application so no configuration is needed. If you are deploying a non-konstructor application, look at the configuration sections of the [build](https://konstructor.js.org/guides/kolony/build) guide for more information on how to properly set up your deployment stages.
 
 Inside of your konstructor application, add your kolony application as a remote and push.
 ```
@@ -139,7 +138,7 @@ To $SERVER_IP:my-app
  * [new branch]      master -> master
 ```
 
-Once you deploy your app, it is almost ready to go. You can view your deployed app at `$SERVER_IP:$PORT` by finding the port in the deploy logs (above) or running `apps:list`.
+Once you successfully deploy your app, it is almost ready to go. You can view your deployed app at `$SERVER_IP:$PORT`. You can find the port by looking deploy logs (above) or running `apps:list`.
 ```
 $ kolony apps:list
 
@@ -151,7 +150,7 @@ cygpT   konstructor  9637  production   konstructor.ludicrous.xyz
 
 ```
 
-However, an address like `127.0.0.1:4997` is ugly, hard to find, and not user friendly. To get around this, you can add a domain through kolony which will set up nginx as a proxy.
+However, an address like `127.0.0.1:4997` is ugly, hard to find, and not user friendly. To get around this, you can add a custom domain through kolony which will set up nginx as a proxy.
 ```
 $ kolony domains:add my-app my-app.com
 
@@ -174,4 +173,4 @@ $ kolony domains:add my-app my-app.com
 
 ```
 
-Now all you have to do is set an A record that points to your IP address, visit the URL and you're done!
+Now all you have to do is set an DNS A record that points to your IP address, and visit the URL. Thats it!

@@ -14,7 +14,7 @@ cygpT  konstructor  9637  production   konstructor.ludicrous.xyz
 ```
 This will list all of your applications, and if they are deployed, the id, port, environment, and domains.
 ## Create
-You can create a new application in kolony by running the `apps:create` command.
+You can create a new application in kolony by running the `apps:create` command. It must contain only lowercase letters and hyphens.
 ```
 $ kolony apps:create my-app
 
@@ -32,7 +32,7 @@ $ kolony apps:create my-app
 ```
 This will set up a new git repository you can push to, and a pm2 config.
 ## Destroy
-If you accidentally created a new project or would like to get rid of your existing one, you can use `apps:destroy`.
+If you would like to get rid of and existing application, you can use `apps:destroy`.
 ```
 $ kolony apps:destroy my-app
 
@@ -55,3 +55,4 @@ $ kolony apps:destroy my-app
     removed ecosystem config
 
 ```
+This will remove the git repository, any system links, pm2 configs, and the build directory if it exists.
