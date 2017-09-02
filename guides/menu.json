@@ -36,6 +36,17 @@
       ]
     }
   ],
+  "konstructor-cli": [
+    {
+      "name": "Getting Started",
+      "children": [
+        {
+          "name": "Getting Started",
+          "path": "getting-started/index"
+        }
+      ]
+    }
+  ],
   "kolony": [
     {
       "name": "Getting Started",
@@ -151,6 +162,17 @@
             {
               "name": "Cleanup",
               "path": "#cleanup"
+            }
+          ]
+        }
+      ],
+      "konstructor-essentials": [
+        {
+          "name": "Getting Started",
+          "children": [
+            {
+              "name": "Getting Started",
+              "path": "getting-started/index"
             }
           ]
         }
