@@ -13,7 +13,25 @@
         },
         {
           "name": "Organization",
-          "path": "getting-started/organization"
+          "path": "getting-started/organization",
+          "children": [
+            {
+              "name": "App",
+              "path": "#app"
+            },
+            {
+              "name": "Assets",
+              "path": "#assets"
+            },
+            {
+              "name": "Config",
+              "path": "#config"
+            },
+            {
+              "name": "DB",
+              "path": "#db"
+            }
+          ]
         }
       ]
     },
