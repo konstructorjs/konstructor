@@ -66,7 +66,7 @@ $ kolony apps:create my-app
 
 ```
 
-For this guide, we are going to deploy a [konstructor](https://github.com/konstructorjs/konstructor) application so no configuration is needed. If you are deploying a non-konstructor application, look at the configuration sections of the [build](https://konstructor.js.org/guides/kolony/build) guide for more information on how to properly set up your deployment stages.
+For this guide, we are going to deploy a [konstructor](https://github.com/konstructorjs/konstructor) application so no configuration is needed. If you are deploying a non-konstructor application, look at the configuration sections of the [builds](https://konstructor.js.org/guides/kolony/builds/stages) guide for more information on how to properly set up your deployment stages.
 
 Inside of your konstructor application, add your kolony application as a remote and push.
 ```

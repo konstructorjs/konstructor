@@ -25,7 +25,7 @@ To set your own custom node version, use the [`engines`](https://docs.npmjs.com/
 Next, the environment variables will be injected into both the current build process and the final production pm2 process.
 
 ### Configuration
-You can configure the environment variables through the [config command](https://konstructor.js.org/guides/kolony/config).
+You can configure the environment variables through the [config command](https://konstructor.js.org/guides/kolony/commands/config).
 
 # Install
 kolony will then run `npm install` using the node version you specified.

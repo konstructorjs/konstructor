@@ -47,4 +47,4 @@ $ kolony setup
 
 ```
 
-Once you've set up kolony, you can create an app using [`apps:create`](https://konstructor.js.org/guides/kolony/apps#create).
+Once you've set up kolony, you can create an app using [`apps:create`](https://konstructor.js.org/guides/kolony/commands/apps#create).
