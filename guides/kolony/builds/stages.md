@@ -27,29 +27,95 @@ Next, the environment variables will be injected into both the current build pro
 ### Configuration
 You can configure the environment variables through the [config command](https://konstructor.js.org/guides/kolony/commands/config).
 
+# Pre-Install
+kolony will then run a `pre-install` script if it is defined.
+
+### Configuration
+You can define a `pre-install` script in your `package.json`.
+```json
+{
+  ...
+  "kolony": {
+    "pre-install": "echo 'pre-install'"
+  }
+  ...
+}
+```
+
 # Install
-kolony will then run `npm install` using the node version you specified.
+kolony will then run an install script. If you do not define an install script, it will automatically do `npm install`. If you would like to skip this step, you can set the script to an empty string.
 
 ### Configuration
-Option to configure `npm install` will come soon.
+You can define a `install` script in your `package.json`.
+```json
+{
+  ...
+  "kolony": {
+    "install": "echo 'install'"
+  }
+  ...
+}
+```
 
-# Clean
-This stage is to clean up any assets you have. kolony will run `npm run clean` using the node version you specified.
+# Post-Install
+kolony will then run a `post-install` script if it is defined.
 
 ### Configuration
-Option to configure this stage will come soon. For now, just set the `clean` script to an empty string if you do not need to clean your assets.
+You can define a `post-install` script in your `package.json`.
+```json
+{
+  ...
+  "kolony": {
+    "post-install": "echo 'post-install'",
+  }
+  ...
+}
+```
+
+# Pre-Build
+kolony will then run a `pre-build` script if it is defined.
+
+### Configuration
+You can define a `pre-build` script in your `package.json`.
+```json
+{
+  ...
+  "kolony": {
+    "pre-build": "echo 'pre-build'"
+  }
+  ...
+}
+```
 
 # Build
-This stage is to build your assets. kolony will run `npm run build` using the node version you specified.
+kolony will then run your build script. If you do not define a build script, it will automatically do `npm run build`. If you would like to skip this step, you can set the script to an empty string.
 
 ### Configuration
-Option to configure this stage will come soon. For now, just set the `build` script to an empty string if you do not need to clean your assets.
+You can define a `build` script in your `package.json`.
+```json
+{
+  ...
+  "kolony": {
+    "build": "echo 'build'"
+  }
+  ...
+}
+```
 
-# Digest
-This stage is to digest your assets. In konstructor, it will fingerprint the assets so that the cache will clear. It is recommended that you should do this, but it not required. kolony will run `npm run digest` using the node version you specified.
+# Post-Build
+kolony will then run a `post-build` script if it is defined.
 
 ### Configuration
-Option to configure this stage will come soon. For now, just set the `digest` script to an empty string if you do not need to clean your assets.
+You can define a `post-build` script in your `package.json`.
+```json
+{
+  ...
+  "kolony": {
+    "post-build": "echo 'post-build'",
+  }
+  ...
+}
+```
 
 # Start
 This stage will start up a new pm2 process. It will inject your environment variables, then run `npm start`. Make sure your application runs on the port specified by the `PORT` environment variable.
