@@ -27,7 +27,7 @@ Next, the environment variables will be injected into both the current build pro
 ### Configuration
 You can configure the environment variables through the [config command](https://konstructor.js.org/guides/kolony/commands/config).
 
-# Pre-Install
+# Pre Install
 kolony will then run a `pre-install` script if it is defined.
 
 ### Configuration
@@ -57,7 +57,7 @@ You can define a `install` script in your `package.json`.
 }
 ```
 
-# Post-Install
+# Post Install
 kolony will then run a `post-install` script if it is defined.
 
 ### Configuration
@@ -72,7 +72,7 @@ You can define a `post-install` script in your `package.json`.
 }
 ```
 
-# Pre-Build
+# Pre Build
 kolony will then run a `pre-build` script if it is defined.
 
 ### Configuration
@@ -102,7 +102,7 @@ You can define a `build` script in your `package.json`.
 }
 ```
 
-# Post-Build
+# Post Build
 kolony will then run a `post-build` script if it is defined.
 
 ### Configuration

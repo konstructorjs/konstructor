@@ -140,20 +140,28 @@
               "path": "#environment"
             },
             {
+              "name": "Pre Install",
+              "path": "#pre-install"
+            },
+            {
               "name": "Install",
               "path": "#install"
             },
             {
-              "name": "Clean",
-              "path": "#clean"
+              "name": "Post Install",
+              "path": "#post-install"
+            },
+            {
+              "name": "Pre Build",
+              "path": "#pre-build"
             },
             {
               "name": "Build",
               "path": "#build"
             },
             {
-              "name": "Digest",
-              "path": "#digest"
+              "name": "Post Build",
+              "path": "#post-build"
             },
             {
               "name": "Start",
