@@ -6,7 +6,7 @@ $ kolony config:get my-app
 
 key                    value                                   
 ---------------------  ----------------------------------------
-PORT                   4997
+PORT                   8159
 NODE_ENV               production
 NPM_CONFIG_LOGLEVEL    error
 NPM_CONFIG_PRODUCTION  false

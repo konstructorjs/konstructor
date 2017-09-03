@@ -72,68 +72,73 @@ Inside of your konstructor application, add your kolony application as a remote 
 ```
 $ git remote add deploy root@$SERVER_IP:my-app
 $ git push deploy master
-Counting objects: 168, done.
+Counting objects: 27, done.
 Delta compression using up to 8 threads.
-Compressing objects: 100% (159/159), done.
-Writing objects: 100% (168/168), 108.06 KiB | 0 bytes/s, done.
-Total 168 (delta 80), reused 0 (delta 0)
-remote: Resolving deltas: 100% (80/80), done.
-remote:
-remote: --> building application 6fSRwX
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (27/27), 4.98 KiB | 0 bytes/s, done.
+Total 27 (delta 1), reused 0 (delta 0)
+remote: 
+remote: --> building application 6sPoqL
 remote:
 remote: --> cloning application
-remote:
+remote: 
 remote: --> looking for existing build
 remote:     couldnt not find existing build
-remote:
+remote: 
 remote:     could not find existing port
-remote:     generated new port 4997
-remote:
+remote:     generated new port 8159
+remote: 
 remote: --> looking for package.json
 remote:     found package.json
-remote:
+remote: 
 remote: --> looking for node and npm versions
 remote:     installing node stable
-remote:
+remote: 
 remote: --> configuring environment variables
+remote: 
+remote: --> running pre-install script
+remote:     no pre-install script defined
+remote: 
+remote: --> running install script
 remote:
-remote: --> installing packages
+remote:   added 1440 packages in 30.127s
 remote:
-remote:   added 1530 packages in 20.466s
+remote: --> running post-install script
+remote:     no post-install script defined
 remote:
-remote: --> cleaning assets
+remote: --> running pre-build script
 remote:
-remote:   > konstructor-web@0.0.0 clean
+remote:   > my-app@0.0.0 clean
 remote:   > konstructor clean
 remote:
 remote:   removed compiled assets
 remote:
-remote: --> building assets
+remote: --> running build script
 remote:
-remote:   > konstructor-web@0.0.0 build
+remote:   > my-app@0.0.0 build
 remote:   > konstructor build
-remote:
-remote:    DONE  Compiled successfully in 8918ms16:22:41
-remote:
-remote:             Asset      Size  Chunks             Chunk Names
-remote:        /js/app.js     83 kB       0  [emitted]  /js/app
-remote:       css/app.css    150 kB       0  [emitted]  /js/app
-remote:    /js/app.js.map   84.8 kB       0  [emitted]  /js/app
-remote:   css/app.css.map  80 bytes       0  [emitted]  /js/app
-remote:
-remote: --> digesting assets
-remote:
-remote:   > konstructor-web@0.0.0 digest
+remote:   
+remote:    DONE  Compiled successfully in 1635ms13:10:54
+remote:   
+remote:             Asset       Size  Chunks             Chunk Names
+remote:        /js/app.js  564 bytes       0  [emitted]  /js/app
+remote:       css/app.css  403 bytes       0  [emitted]  /js/app
+remote:    /js/app.js.map  702 bytes       0  [emitted]  /js/app
+remote:   css/app.css.map   77 bytes       0  [emitted]  /js/app
+remote: 
+remote: --> running post-build script
+remote:   
+remote:   > my-app@0.0.0 digest
 remote:   > konstructor digest
-remote:
-remote:   moving app.js to app-e4e6a44652352dd825e50ea1c84f094e.js
-remote:   moving app.css to app-16d4668e5fb6249c488bb93f3bf58634.css
-remote:
+remote:   
+remote:   moving app.js to app-64d8c0058e270ebed1f6365e7b822785.js
+remote:   moving app.css to app-1a82143fcd53a7b2b55d00523c5f09b7.css
+remote: 
 remote: --> starting server
-remote:     started server on port 4997
-remote:
+remote:     started server on port 8159
+remote: 
 remote: --> application successfully deployed
-remote:
+remote: 
 To $SERVER_IP:my-app
  * [new branch]      master -> master
 ```
@@ -146,18 +151,18 @@ id      name         port  environment  domains
 ------  -----------  ----  -----------  -------
 cygpT   konstructor  9637  production   konstructor.ludicrous.xyz
                                         konstructor.js.org
-6fSRwX  my-app       4997  production   none
+6fSRwX  my-app       8159  production   none
 
 ```
 
-However, an address like `127.0.0.1:4997` is ugly, hard to find, and not user friendly. To get around this, you can add a custom domain through kolony which will set up nginx as a proxy.
+However, an address like `127.0.0.1:8159` is ugly, hard to find, and not user friendly. To get around this, you can add a custom domain through kolony which will set up nginx as a proxy.
 ```
 $ kolony domains:add my-app my-app.com
 
 --> looking for application
     found my-app
 
-    found port 4997
+    found port 8159
 
 --> checking to see if domain is already in use
     domain is not in use

@@ -17,7 +17,7 @@ $ kolony domains:add my-app my-app.com
 --> looking for application
     found my-app
 
-    found port 4997
+    found port 8159
 
 --> checking to see if domain is already in use
     domain is not in use
