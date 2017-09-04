@@ -185,6 +185,27 @@
           "path": "getting-started/index"
         }
       ]
+    },
+    {
+      "name": "Components",
+      "children": [
+        {
+          "name": "Active Link",
+          "path": "components/active-link"
+        },
+        {
+          "name": "Render",
+          "path": "components/render"
+        },
+        {
+          "name": "Import Javascripts",
+          "path": "components/import-javascripts"
+        },
+        {
+          "name": "Import Stylesheets",
+          "path": "components/import-stylesheets"
+        }
+      ]
     }
   ]
 }
