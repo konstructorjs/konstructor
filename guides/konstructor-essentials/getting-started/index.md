@@ -1,6 +1,6 @@
 # Getting Started
 # Introduction
-konstructor adds some essential styles and components for konstructor. Generally you would use this package along with konstructor. Do not use the marko components if you are not using konstructor since the components are specific to konstructor's organization, files, and configuration. However, you are free to use the essentials css pack wherever you like.
+konstructor essentials adds some essential styles and components for konstructor. Generally you would use this package along with konstructor. Do not use the marko components if you are not using konstructor since the components are specific to konstructor's organization, files, and configuration. However, you are free to use the essentials css pack wherever you like.
 
 # Requirements
 - marko (for components)
