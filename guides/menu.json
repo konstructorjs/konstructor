@@ -34,6 +34,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "App",
+      "children": [
+        {
+          "name": "Introduction",
+          "path": "app/index"
+        }
+      ]
+    },
+    {
+      "name": "Assets",
+      "children": [
+        {
+          "name": "Introduction",
+          "path": "assets/index"
+        }
+      ]
+    },
+    {
+      "name": "Config",
+      "children": [
+        {
+          "name": "Introduction",
+          "path": "config/index"
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "children": [
+        {
+          "name": "Introduction",
+          "path": "database/index"
+        }
+      ]
     }
   ],
   "konstructor-cli": [
