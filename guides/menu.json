@@ -43,6 +43,23 @@
         {
           "name": "Getting Started",
           "path": "getting-started/index"
+        },
+        {
+          "name": "Installation",
+          "path": "getting-started/installation"
+        }
+      ]
+    },
+    {
+      "name": "Commands",
+      "children": [
+        {
+          "name": "New",
+          "path": "commands/new"
+        },
+        {
+          "name": "Secret",
+          "path": "commands/secret"
         }
       ]
     }

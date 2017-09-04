@@ -1,13 +1,9 @@
-# Getting Started
+# New
 # Introduction
-konstructor cli is a tool to help you get started with a new konstructor app in seconds. It will generate all of the files you need so all you have to do is install and run.
+The new command will generate a new project that has all of the files required to run konstructor. It also comes with [laravel-mix](https://github.com/JeffreyWay/laravel-mix) to help you easily compile your assets.
 
-# Quick Start
-Install konstructor-cli.
-```
-npm install -g konstructor-cli
-```
-Then generate a new application.
+# Usage
+Simply call the `new` command with the name of your application. The application name must be all lowercase letters and hyphens.
 ```
 $ konstructor-cli new my-app
 
