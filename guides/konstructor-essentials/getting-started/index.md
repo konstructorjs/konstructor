@@ -6,7 +6,7 @@ konstructor essentials adds some essential styles and components for konstructor
 - marko (for components)
 - scss/sass (for the styles)
 
-Install konstrcutor-essentials through npm. If you used konstructor-cli, it will be installed for you by default.
+Install konstructor-essentials through npm. If you used konstructor-cli, it will be installed for you by default.
 ```
 npm install konstructor-essentials
 ```
