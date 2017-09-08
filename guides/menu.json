@@ -41,6 +41,10 @@
         {
           "name": "Introduction",
           "path": "app/index"
+        },
+        {
+          "name": "Routes",
+          "path": "app/routes"
         }
       ]
     },
