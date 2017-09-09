@@ -6,6 +6,7 @@ const endpoint = require('./endpoint');
 const router = require('./router');
 const model = require('./model');
 const config = require('./config');
+const lib = require('./lib');
 
 const script = process.argv[2];
 
@@ -28,5 +29,6 @@ if (script) {
     router,
     model,
     config,
+    lib,
   };
 }
