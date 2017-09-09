@@ -45,6 +45,8 @@ register('flash', './middleware/flash.js');
 
 register('404', './middleware/404.js');
 
+register('middleware', './middleware/middleware');
+
 register('router', './middleware/router.js');
 
 module.exports = app;
