@@ -15,6 +15,10 @@ module.exports = class endpoint {
     this.path = options.path;
   }
 
+  static get csrf() {
+    return true;
+  }
+
   async render(...input) {
     try {
       const options = {};

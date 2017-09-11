@@ -50,8 +50,6 @@ module.exports = (app) => {
       throw new Error('unable to find endpoint.');
     }
 
-    endpoint.test = true;
-
     return endpoint;
   };
 
