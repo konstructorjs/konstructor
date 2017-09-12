@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const endpoint = require('./endpoint');
 const router = require('./router');
 const model = require('./model');
+const models = require('./models');
 const config = require('./config');
 const lib = require('./lib');
 
@@ -28,6 +29,7 @@ if (script) {
     endpoint,
     router,
     model,
+    models,
     config,
     lib,
   };
