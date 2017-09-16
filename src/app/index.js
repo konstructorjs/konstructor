@@ -1,4 +1,5 @@
 const chalkStartTime = Date.now();
+require('util.promisify/shim')();
 const chalk = require('chalk'); // eslint-disable-line
 const config = require('../config');
 

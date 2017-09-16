@@ -68,7 +68,8 @@
     "objection": "^0.8.6",
     "pg": "^7.1.0",
     "require-directory": "^2.1.1",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "util.promisify": "^1.0.0"
   },
   "release": {
     "verifyConditions": "condition-circle"
