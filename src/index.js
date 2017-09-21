@@ -6,6 +6,8 @@ const endpoint = require('./endpoint');
 const router = require('./router');
 const model = require('./model');
 const models = require('./models');
+const mailer = require('./mailer');
+const mail = require('./mail');
 const config = require('./config');
 const lib = require('./lib');
 
@@ -30,6 +32,8 @@ if (script) {
     router,
     model,
     models,
+    mailer,
+    mail,
     config,
     lib,
   };
