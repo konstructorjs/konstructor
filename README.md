@@ -1,6 +1,6 @@
 <p align="center"><a href="https://konstructor.js.org" target="_blank"><img width="100"src="https://konstructor.js.org/assets/static/images/konstructor.png"></a></p>
 <p align="center">
-  <a href="https://circleci.com/gh/konstructorjs/konstructor"><img src="https://img.shields.io/circleci/project/konstructorjs/konstructor.svg" alt="Build Status"></a>
+  <a href="https://travis-ci.org/konstructorjs/konstructor"><img src="https://img.shields.io/travis/konstructorjs/konstructor.svg" alt="Build Status"></a>
   <a href="https://www.npmjs.com/package/konstructor"><img src="https://img.shields.io/npm/dm/konstructor.svg" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/konstructor"><img src="https://img.shields.io/npm/v/konstructor.svg" alt="Version"></a>
   <a href="https://www.npmjs.com/package/konstructor"><img src="https://img.shields.io/npm/l/konstructor.svg" alt="License"></a>
@@ -20,7 +20,7 @@ The easiest way to get started is with [konstructor-cli](https://github.com/kons
 ```
 npm install -g konstructor-cli
 ```
-See the [installation guide](https://konstructor.js.org/docs/getting-started/installation) for more information.
+See the [installation guide](https://konstructor.js.org/guides/konstructor/getting-started/installation) for more information.
 
 ## Documentation/Guides
 You can find all of the documentation on [konstructor's website](https://konstructor.js.org/guides/konstructor) or in the `guides` folder.
