@@ -12,8 +12,8 @@ konstructor is a simple and intuitive node.js framework to help you build out la
 ## Getting Started
 
 ### Requirements
-- `node >= 7.6.0`
-- `npm >= 4`
+- `node >= 8`
+- `npm >= 5`
 
 ### Installation
 The easiest way to get started is with [konstructor-cli](https://github.com/konstructorjs/konstructor-cli).
