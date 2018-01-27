@@ -1,6 +1,6 @@
 {
   "name": "konstructor",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "more than a boilerplate, less than a framework.",
   "main": "lib",
   "scripts": {
@@ -9,7 +9,8 @@
     "compile": "babel --out-dir lib/ --copy-files src/",
     "test": "npm run lint",
     "lint": "eslint *.js src/*",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "files": [
     "lib",
@@ -33,13 +34,13 @@
   },
   "homepage": "https://github.com/konstructorjs/konstructor#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "condition-circle": "^1.5.0",
-    "eslint": "^4.3.0",
-    "eslint-config-airbnb-base": "^11.3.1",
-    "eslint-plugin-import": "^2.7.0",
-    "semantic-release": "^6.3.6"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.8.0",
+    "semantic-release": "^12.2.5",
+    "travis-deploy-once": "^4.3.3"
   },
   "bin": {
     "konstructor": "lib/index.js"
@@ -49,32 +50,29 @@
     "npm": ">=4.0.0"
   },
   "dependencies": {
-    "chalk": "^2.0.1",
+    "chalk": "^2.3.0",
     "chokidar": "^1.7.0",
-    "juice": "^4.1.1",
+    "juice": "^4.2.2",
     "knex": "^0.13.0",
-    "koa": "^2.3.0",
+    "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "koa-compress": "^2.0.0",
     "koa-conditional-get": "^2.0.0",
     "koa-csrf": "^3.0.6",
     "koa-etag": "^3.0.0",
-    "koa-logger": "^3.0.1",
+    "koa-logger": "^3.1.0",
     "koa-response-time": "^2.0.0",
-    "koa-router": "^7.2.1",
-    "koa-session": "^5.5.0",
-    "koa-static": "^4.0.1",
-    "livereload": "^0.6.2",
-    "marko": "^4.4.22",
-    "node-sass": "^4.5.3",
-    "nodemailer": "^4.1.0",
-    "objection": "^0.8.6",
-    "pg": "^7.1.0",
+    "koa-router": "^7.3.0",
+    "koa-session": "^5.8.1",
+    "koa-static": "^4.0.2",
+    "livereload": "^0.6.3",
+    "marko": "^4.7.5",
+    "node-sass": "^4.7.2",
+    "nodemailer": "^4.4.2",
+    "objection": "^0.8.9",
+    "pg": "^7.4.1",
     "require-directory": "^2.1.1",
-    "rimraf": "^2.6.1",
+    "rimraf": "^2.6.2",
     "util.promisify": "^1.0.0"
-  },
-  "release": {
-    "verifyConditions": "condition-circle"
   }
 }
