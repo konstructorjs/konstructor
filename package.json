@@ -2,7 +2,7 @@
   "name": "@konstructor/konstructor",
   "version": "0.0.0-development",
   "description": "more than a boilerplate, less than a framework.",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
     "dev": "babel --out-dir lib/ --copy-files --watch src/",
     "prepublish": "npm run compile",
@@ -13,8 +13,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "files": [
-    "lib",
-    "app.js"
+    "lib"
   ],
   "repository": {
     "type": "git",
