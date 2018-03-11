@@ -4,6 +4,9 @@ module.exports = class konstructor {
   }
 
   add(wrapper) {
-    wrapper.setup(this);
+    if (wrapper.setup) {
+      return wrapper.setup(this);
+    }
+    return wrapper.constructor.setup(this);
   }
 };
