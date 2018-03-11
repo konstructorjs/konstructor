@@ -1,3 +1,0 @@
-# Assets
-# Introduction
-Coming soon

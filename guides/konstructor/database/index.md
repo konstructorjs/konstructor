@@ -1,3 +1,0 @@
-# Database
-# Introduction
-Coming soon
