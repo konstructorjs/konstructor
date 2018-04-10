@@ -1,5 +1,5 @@
 {
-  "name": "konstructor",
+  "name": "@konstructor/konstructor",
   "version": "0.0.0-development",
   "description": "more than a boilerplate, less than a framework.",
   "main": "lib",
@@ -13,8 +13,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "files": [
-    "lib",
-    "app.js"
+    "lib"
   ],
   "repository": {
     "type": "git",
@@ -22,10 +21,8 @@
   },
   "keywords": [
     "konstructor",
-    "node",
-    "nodejs",
     "koa",
-    "http"
+    "node"
   ],
   "author": "Manthan Mallikarjun",
   "license": "ISC",
@@ -33,46 +30,24 @@
     "url": "https://github.com/konstructorjs/konstructor/issues"
   },
   "homepage": "https://github.com/konstructorjs/konstructor#readme",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "yargs": "^11.0.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^11.3.2",
-    "eslint-plugin-import": "^2.8.0",
-    "semantic-release": "^12.2.5",
-    "travis-deploy-once": "^4.3.3"
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "semantic-release": "^15.0.2",
+    "travis-deploy-once": "^4.4.0"
   },
   "bin": {
-    "konstructor": "lib/index.js"
+    "konstructor-scripts": "lib/cli.js"
   },
   "engines": {
-    "node": ">=7.6.0",
-    "npm": ">=4.0.0"
-  },
-  "dependencies": {
-    "chalk": "^2.3.0",
-    "chokidar": "^1.7.0",
-    "juice": "^4.2.2",
-    "knex": "^0.13.0",
-    "koa": "^2.4.1",
-    "koa-bodyparser": "^4.2.0",
-    "koa-compress": "^2.0.0",
-    "koa-conditional-get": "^2.0.0",
-    "koa-csrf": "^3.0.6",
-    "koa-etag": "^3.0.0",
-    "koa-logger": "^3.1.0",
-    "koa-response-time": "^2.0.0",
-    "koa-router": "^7.3.0",
-    "koa-session": "^5.8.1",
-    "koa-static": "^4.0.2",
-    "livereload": "^0.6.3",
-    "marko": "^4.7.5",
-    "node-sass": "^4.7.2",
-    "nodemailer": "^4.4.2",
-    "objection": "^0.8.9",
-    "pg": "^7.4.1",
-    "require-directory": "^2.1.1",
-    "rimraf": "^2.6.2",
-    "util.promisify": "^1.0.0"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }

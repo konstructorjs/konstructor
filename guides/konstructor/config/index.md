@@ -1,3 +1,0 @@
-# Config
-# Introduction
-Coming soon

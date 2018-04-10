@@ -1,78 +1,73 @@
-/* eslint-disable global-require, import/no-dynamic-require */
-const childProcess = require('child_process');
+const path = require('path');
 const chalk = require('chalk');
-const config = require('../config/index.js');
+const childProcess = require('child_process');
 
-const environment = process.env.NODE_ENV || 'development';
+const currentDirectory = process.cwd();
+const env = process.env.NODE_ENV || 'development';
 
-module.exports = () => {
-  const processes = {};
+let packageJSON = {};
+try {
+  packageJSON = require(path.join(currentDirectory, './package.json'));
+} catch (err) {
+  // do nothing
+}
 
-  const killProcesses = () => {
-    Object.keys(processes).forEach((subProcess) => {
-      try {
-        subProcess.kill();
-      } catch (_) {
-        // do nothing
-      }
-    });
-  };
-
-  process.on('exit', () => {
-    killProcesses();
-    process.exit(0);
-  });
-
-  process.on('SIGINT', () => {
-    killProcesses();
-    process.exit(1);
-  });
-
-  process.on('uncaughtException', () => {
-    killProcesses();
-    process.exit(1);
-  });
-
-  if (config.server) {
-    if (config.server.environment) {
-      Object.keys(config.server.environment).forEach((key) => {
-        process.env[key] = config.server.environment[key];
-      });
-    }
-    const mainProcess = childProcess.spawn(config.server.command, config.server.options || [], { stdio: 'inherit' });
-    processes.main = mainProcess;
-
-    mainProcess.on('error', (err) => {
-      console.log(chalk.red(err));
-      killProcesses();
-    });
-    mainProcess.on('close', () => {
-      killProcesses();
-    });
-    mainProcess.on('exit', () => {
-      killProcesses();
-    });
-  } else {
-    console.log(chalk.red(`error in ${environment} server config`));
-    process.exit(1);
+exports.command = 'dev';
+exports.desc = 'start the dev and assets server';
+exports.handler = () => {
+  const script = (typeof packageJSON.main === 'string') ? packageJSON.main : './index.js';
+  let serverConfig;
+  try {
+    const config = require(path.join(currentDirectory, './config/server.js'));
+    serverConfig = config[env];
+  } catch (err) {
+    console.log(chalk.red(chalk.bold('unable to load config/server.js file')));
+    console.log(err.stack);
+  }
+  let assetsConfig;
+  let assetsProcess;
+  try {
+    const config = require(path.join(currentDirectory, './config/assets.js'));
+    assetsConfig = config[env];
+  } catch (err) {
+    // do nothing
   }
 
-  if (config.assets) {
-    const assetProcess = childProcess.spawn(config.assets.command, config.assets.options || [], { stdio: 'inherit' });
-    processes.assets = assetProcess;
+  if (assetsConfig) {
+    const assetsEnv = Object.assign({}, process.env, assetsConfig.environment);
+    assetsProcess = childProcess.spawn(assetsConfig.command, assetsConfig.options || [], {
+      stdio: 'inherit',
+      env: assetsEnv,
+    });
 
-    assetProcess.on('error', (err) => {
+    assetsProcess.on('error', (err) => {
       console.log(chalk.red(err));
-      killProcesses();
+      assetsProcess.kill();
     });
-    assetProcess.on('close', () => {
-      killProcesses();
+    assetsProcess.on('close', () => {
+      assetsProcess.kill();
     });
-    assetProcess.on('exit', () => {
-      killProcesses();
+    assetsProcess.on('exit', () => {
+      assetsProcess.kill();
     });
-  } else {
-    console.log(chalk.red(`error in ${environment} assets config`));
+  }
+
+  const command = (typeof serverConfig.command === 'string') ? serverConfig.command : 'nodemon';
+  const options = (Array.isArray(serverConfig.options)) ? serverConfig.options : [
+    path.join(currentDirectory, script),
+  ];
+
+  const commandEnv = Object.assign({}, process.env, serverConfig.environment);
+  const result = childProcess.spawnSync(command, options, {
+    stdio: 'inherit',
+    env: commandEnv,
+  });
+
+  if (result.error) {
+    if (result.stderr) {
+      console.log(chalk.red(result.stderr.toString()));
+    }
+    console.log(chalk.red(result.error.toString()));
     process.exit(1);
   }
 };

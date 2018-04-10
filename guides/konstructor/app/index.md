@@ -1,3 +1,0 @@
-# App
-# Introduction
-The app directory directory contains all of your endpoints. Most of the code you write should be in this directory. The only directories in this folder should be the `models` folder and the rest of your endpoints. Each endpoint should be its own directory with an `index.js` to handle the endpoint, and an `index.marko` file if you plan to render a template. All other files will be ignore and you will have to import them to use them. Keep all client side assets in the `assets` directory and not the `app` directory.
