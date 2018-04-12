@@ -18,7 +18,7 @@ konstructor is a simple and intuitive node.js framework to help you build out la
 ### Installation
 The easiest way to get started is with [konstructor-cli](https://github.com/konstructorjs/konstructor-cli).
 ```
-npm install -g konstructor-cli
+npm install -g @konstructor/cli
 ```
 See the [installation guide](https://konstructor.js.org/guides/konstructor/getting-started/installation) for more information.
 
