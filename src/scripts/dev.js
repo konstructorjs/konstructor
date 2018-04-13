@@ -34,7 +34,7 @@ exports.handler = () => {
   }
 
   if (assetsConfig) {
-    const assetsEnv = Object.assign({}, process.env, assetsConfig.environment);
+    const assetsEnv = Object.assign({}, process.env, assetsConfig.environment || {});
     assetsProcess = childProcess.spawn(assetsConfig.command, assetsConfig.options || [], {
       stdio: 'inherit',
       env: assetsEnv,
@@ -57,7 +57,7 @@ exports.handler = () => {
     path.join(currentDirectory, script),
   ];
 
-  const commandEnv = Object.assign({}, process.env, serverConfig.environment);
+  const commandEnv = Object.assign({}, process.env, serverConfig.environment || {});
   const result = childProcess.spawnSync(command, options, {
     stdio: 'inherit',
     env: commandEnv,
